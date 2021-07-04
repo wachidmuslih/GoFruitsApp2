@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="5dp"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="4dp"
+    android:layout_marginTop="7dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#DFFFD1"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:scaleType="center"
+            android:id="@+id/cat_nav_img"
+            android:src="@drawable/fruits"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#DFFFD1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="center"
+                android:id="@+id/cat_nav_name"
+                android:text="Name"
+                android:textSize="24sp"
+                android:textColor="@color/black" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="center"
+                android:id="@+id/cat_nav_desc"
+                android:text="Description"
+                android:textColor="@color/black" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="center"
+                android:id="@+id/cat_nav_discount"
+                android:text="DISCOUNT"
+                android:textSize="24sp"
+                android:textColor="@color/black" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="center"
+                android:id="@+id/cat_nav_disc"
+                android:text="20% OFF"
+                android:textSize="24sp"
+                android:textColor="@color/green_700" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_arrow_forward_ios_24"
+                android:layout_gravity="end"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="5dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

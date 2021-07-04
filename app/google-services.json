@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "966843972973",
+    "project_id": "gofruitsapp2",
+    "storage_bucket": "gofruitsapp2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:966843972973:android:8fb259629a7e685473ee64",
+        "android_client_info": {
+          "package_name": "com.example.gofruitsapp2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "966843972973-bar0s7pqsb1aupdhvcnieavtl4kvm2eo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBt-vMRUdi4lrPZLE_U1Jhs7IhJtw1T2u4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "966843972973-bar0s7pqsb1aupdhvcnieavtl4kvm2eo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

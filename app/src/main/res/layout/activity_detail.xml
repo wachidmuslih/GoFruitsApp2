@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity">
+
+    <ImageView
+        android:id="@+id/detailed_img"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/green_200"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Detailed Products" />
+
+    <TextView
+        android:id="@+id/detailed_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="84dp"
+        android:text="Price : 20000/kg"
+        android:textColor="@color/green_700"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.071"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detailed_img"
+        tools:layout_marginTop="10dp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/ratingbar"
+        app:layout_constraintBottom_toBottomOf="@+id/detailed_price"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.542"
+        app:layout_constraintStart_toEndOf="@+id/detailed_price"
+        app:layout_constraintTop_toBottomOf="@+id/detailed_img"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/detailed_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="83dp"
+        android:layout_weight="1"
+        android:fontFamily="sans-serif"
+        android:text="5.0"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/detailed_price"
+        app:layout_constraintTop_toBottomOf="@+id/detailed_img"
+        app:layout_constraintVertical_bias="0.8" />
+
+    <TextView
+        android:id="@+id/detailed_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_weight="1"
+        android:fontFamily="sans-serif"
+        android:text="Description"
+        android:textColor="@color/green_700"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detailed_price"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/detailed_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_weight="1"
+        android:fontFamily="sans-serif"
+        android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detailed_description"
+        tools:layout_marginTop="10dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:background="@color/green_200"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="1.0">
+
+        <ImageView
+            android:id="@+id/add_item"
+            android:layout_width="54dp"
+            android:layout_height="54dp"
+            app:srcCompat="@drawable/ic_baseline_add_circle_24" />
+
+        <TextView
+            android:id="@+id/quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="13dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginRight="7dp"
+            android:layout_toEndOf="@+id/add_item"
+            android:text="1"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/remove_item"
+            android:layout_width="54dp"
+            android:layout_height="54dp"
+            android:layout_alignBottom="@+id/quantity"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="-7dp"
+            android:layout_toEndOf="@+id/quantity"
+            app:srcCompat="@drawable/ic_baseline_remove_circle_24" />
+
+        <Button
+            android:id="@+id/buttonadd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="153dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="3dp"
+            android:layout_toEndOf="@+id/remove_item"
+            android:background="@color/green_700"
+            android:text="add to cart" />
+
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
